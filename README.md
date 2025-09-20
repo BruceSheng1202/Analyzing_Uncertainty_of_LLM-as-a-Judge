@@ -38,7 +38,9 @@ validity/                # A special example that two same evaluations with diff
 Jupyter notebooks for running experiments:
 
 * Different conformal predictors: `BoostedCP_random.ipynb`, `CHR_random.ipynb`, `CQR_random.ipynb`, `R2CCP_random.ipynb`, `CQR_random.ipynb`, `OrdinalAPS_random.ipynb`, `OrdinalRC_random.ipynb`
-* Analysis: `calsize_experiment.ipynb`, `plot_calsize_instances.ipynb`, `score_performance.ipynb`, `heteroskedasticity_ht.ipynb`
+* Analysis of calsize and ploting: `calsize_experiment.ipynb`, `plot_calsize_instances.ipynb`
+* Metrics calculation for midpoints: `score_performance.ipynb`
+* Hyphothesis testing of heteroskedasticity: `heteroskedasticity_ht.ipynb`
 
 Figures:
 
