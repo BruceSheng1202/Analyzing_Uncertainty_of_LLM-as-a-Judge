@@ -1,7 +1,7 @@
 
 # README
 
-## Project Overview
+## 📌 Project Overview
 
 This repository contains the experiments and analysis for our research on **Analyzing Uncertainty of LLM-as-a-Judge: Interval Evaluations with Conformal Prediction**.
 
