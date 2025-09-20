@@ -13,7 +13,7 @@ This repository contains the experiments and analysis for our research on **Anal
 
 ---
 
-## 📂 Repository Structure
+## 📂 Repository Structure and Description
 
 Example_GenAI-Bench: the experiments on GenAI-Bench as an example to use our framework
 ```
@@ -58,15 +58,19 @@ evaluations and reprompt on server: to evaluate by qwen and dsr1 on server, repr
 
 2. qwen_eval_dialsumm.py: to evaluate on dialsumm
 
-3. reprompt_analysis.py: to analyze why judge model resist to change score
+3. reasoning_eval.py: to evaluate on roscoe
 
-4. reprompt_improvement.py: to evaluate the improvement of reprompting
+4. reasoning_eval_oversampling: to evaluate on roscoe by oversampling
 
-5. reprompt_regrade.py: to reprompt and regrade on summeval
+5. reprompt_analysis.py: to analyze why judge model resist to change score
 
-6. reprompt_regrade_reasoning.py: to reprompt and regrade on roscoe
+6. reprompt_improvement.py: to evaluate the improvement of reprompting
 
-7. 3 bash code to run evaluations and 3 prompts for reprompt_analysis.py
+7. reprompt_regrade.py: to reprompt and regrade on summeval
+
+8. reprompt_regrade_reasoning.py: to reprompt and regrade on roscoe
+
+9. 3 bash code to run evaluations and 3 prompts for reprompt_analysis.py
 ```
 
 ---
