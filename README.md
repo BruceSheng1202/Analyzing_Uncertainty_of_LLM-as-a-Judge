@@ -45,4 +45,3 @@ Figures:
 * `instance_before_adjustment.png`, `instance_after_adjustment.png`
 
 ---
-
