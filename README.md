@@ -15,35 +15,58 @@ This repository contains the experiments and analysis for our research on **Anal
 
 ## 📂 Repository Structure
 
+Example_GenAI-Bench: the experiments on GenAI-Bench as an example to use our framework
 ```
-Example_GenAI-Bench/     # Example benchmark tasks for evaluation
-LVD/                     # LVD predictor
-boosted-conformal/       # Boosted CP predictor
-calsize/                 # Calibration size intervals
-chr/                     # CHR predictor
-distribution_shift/      # Tests under distribution shift: summeval vs dialsumm
-evaluations/             # Evaluation materials for DSR1, QWEN and reprompting  
-evaluations/             # Evaluation materials for GPT-4o and GPT-4o mini 
-human_performance/       # Human-based baseline construction and comparisons
-interval_results/        # Interval evaluation results
-model_logits/            # Extracted Logit
-oversampling/            # Oversampling experiments, comare with repromppt
-prompt_sensitivity/      # Prompt variation experiments 
-raw_scores/              # Raw scores from evaluations
-run_cost/                # Cost efficiency analysis
-temperature/             # Effect of temperature on uncertainty
-validity/                # A special example that two same evaluations with different score 
+1. VQA_eval.py: evaluation code covering evaluation by a VLM, prompt design with image and text, obatin response, token targeting, logits extraction and record saving
+
+2. evaluation_metrics.py: to calcualte the metrics that used to evaluate the midpoints (correlations and errors)
+
+3. interval_processing.py: range clipping, boundary adjustment and calculating coverage and width
+
+4. performance.ipynb: present the results of application on GenAI-Bench, where you can see a csv file keeping responses, logits, scores and intervals etc.
 ```
 
-Jupyter notebooks for running experiments:
+Analysis: performance evaluation to form the tables and analysis in the paper
+```
+1. R2CCP_distribution_shift.ipynb: summeval and dialsumm are used to calibrate each other
 
-* Different conformal predictors: `BoostedCP_random.ipynb`, `CHR_random.ipynb`, `CQR_random.ipynb`, `R2CCP_random.ipynb`, `CQR_random.ipynb`, `OrdinalAPS_random.ipynb`, `OrdinalRC_random.ipynb`
-* Analysis of calsize and ploting: `calsize_experiment.ipynb`, `plot_calsize_instances.ipynb`
-* Metrics calculation for midpoints: `score_performance.ipynb`
-* Hyphothesis testing of heteroskedasticity: `heteroskedasticity_ht.ipynb`
+2. R2CCP_validity.ipynb: an example that two same evaluation task but get different scores due to temperature
 
-Figures:
+3. calsize_comparison.ipynb and calsize_experiment.ipynb: to generate and compare intervals with different calibration size
 
-* `instance_before_adjustment.png`, `instance_after_adjustment.png`
+4. heteroskedaticity_ht.ipynb: hypothesis testing for  heteroskedaticity
+
+5. human_performance.ipynb: the construction of human_based baseline
+
+6. oversampling_raws.ipynb: to evaluate the performance of oversampling and majority vote
+
+7. prompt_sensitivity.ipynb: to compare the performance between GPT-4o and GPT-4o mini, and different prompts
+
+8. score_performacne.py: to calculate the performance of scores and midpoints
+
+9. statistics_intervals.ipynb: to calculate the performance of intervals
+
+10. temperature_comparison.ipynb: to compare the interval performance with different judge models and temperature 
+```
+
+conformal_predictors: 9 methods keeped in 7 files, where CQR and BoostedCP each has 2 variants
+
+
+evaluations and reprompt on server: to evaluate by qwen and dsr1 on server, reprompt and regrade with analysis
+```
+1. qwen_eval.py: to evaluate on summeval
+
+2. qwen_eval_dialsumm.py: to evaluate on dialsumm
+
+3. reprompt_analysis.py: to analyze why judge model resist to change score
+
+4. reprompt_improvement.py: to evaluate the improvement of reprompting
+
+5. reprompt_regrade.py: to reprompt and regrade on summeval
+
+6. reprompt_regrade_reasoning.py: to reprompt and regrade on roscoe
+
+7. 3 bash code to run evaluations and 3 prompts for reprompt_analysis.py
+```
 
 ---
