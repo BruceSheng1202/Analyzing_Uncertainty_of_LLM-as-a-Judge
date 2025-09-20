@@ -1,0 +1,28 @@
+You will be given one summary written for a news article.
+
+Your task is to rate the summary on one metric.
+
+Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+
+Evaluation Criteria:
+
+Fluency (1-5): the quality of the summary in terms of grammar, spelling, punctuation, word choice, and sentence structure.
+
+- 1: Poor. The summary has many errors that make it hard to understand or sound unnatural.
+- 2: Below Average. The summary has several errors that somewhat disrupt the flow or clarity, making it less smooth to read.
+- 3: Fair. The summary has some errors that affect the clarity or smoothness of the text, but the main points are still comprehensible.
+- 4: Above Average. The summary has only minor errors that do not significantly impact readability, and the text flows reasonably well.
+- 5: Good. The summary has few or no errors and is easy to read and follow.
+
+
+Example:
+
+Summary:
+
+{{Summary}}
+
+
+Evaluation Form (scores ONLY):
+
+- Fluency (1-5):

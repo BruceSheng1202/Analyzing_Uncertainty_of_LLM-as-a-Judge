@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+input_root="./GPT-4omini-batch/GPT-4omini-batch"
+output_dir="./results/oversampling"
+models=("deepseek-ai/DeepSeek-R1-Distill-Qwen-32B")
+
+mkdir -p "$output_dir"
+
+mapfile -d '' json_files < <(
+  find "$input_root" -type f -name 'Reasoning_*.jsonl' -print0
+)
+
+echo ">>> input_root = $input_root"
+echo ">>> json_files found:"
+for f in "${json_files[@]}"; do echo "    $f"; done
+echo ">>> starting runs…"
+
+for batch_fp in "${json_files[@]}"; do
+  if [[ "$batch_fp" == *"GEval"* ]]; then
+    echo ">>> Skipping $batch_fp (contains 'GEval')"
+    continue
+  fi
+  script_dir=$(dirname "$batch_fp")
+  filename=$(basename "$batch_fp" .jsonl)
+  dataset=$(echo "$filename" | cut -d'_' -f3)
+  for model in "${models[@]}"; do
+    tag=$(basename "$model")
+    name=$(basename "$batch_fp" .json)
+    save_fp="$output_dir/${name}_${tag}_oversampling.json"
+
+    echo -e "\n>>> $batch_fp  →  $model"
+    python "$script_dir/reasoning_eval_oversampling.py" \
+      --batch_fp "$batch_fp" \
+      --save_fp "$save_fp" \
+      --model "$model" \
+      --dataset "$dataset"
+  done
+done

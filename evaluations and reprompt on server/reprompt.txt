@@ -1,0 +1,35 @@
+Thank you for your initial evaluation!
+
+To help you arrive at a final score that more closely aligns with human expert judgment, we have constructed a 90% confidence interval for this task using conformal prediction based on your past scoring records. This interval is provided to help you gauge the uncertainty in your recent assessment, which we hope will enhance your evaluation.
+
+**Interval Information**: The confidence interval we have provided is {{Interval}}. Please keep in mind that there is approximately a 90% probability that the expert’s score lies within this interval, and a 10% probability that it lies outside.
+
+— **Your Objective**: Acting as a human expert, use the interval information along with the recent evaluation task to decide whether and how to adjust the initial score.
+— Below are some decision-making suggestions for your reference, but we also encourage you to apply your own independent thinking to align as closely as possible with human expert judgment.
+
+**Decision-Making Suggestions**:
+
+1. **Key Dimensions to Consider**:
+
+   * **Original Score Confidence**: Your confidence level in the score you just assigned;
+   * **Interval Position**: Whether the original score falls inside or outside the interval;
+   * **Interval Width**: Whether the interval is narrow (e.g., ≤2.0) or wide (e.g., ≥2.0).
+   * **Potential Labels: What specific label options lie within the interval (e.g., {3.00, 4.00} for an example interval [3,4]).
+
+2. **Advice on Decision, Reasoning, and Explanation**:
+
+   * **High Confidence & Score Within a Narrow Interval**: If the interval is narrow and your score is validated by the interval boundaries, you may confidently retain your original score, provided you believe your evaluation and explanation are seamless. You may also make minor adjustments within the interval where you think the score is most plausible.
+   * **High Confidence & Score Outside a Narrow Interval**: Although there is a small probability (<10%) that you are correct, we encourage you to question your initial judgment, reconsider the evaluation, and consider adjusting the score to the most probable point within the interval, or retain the original score with a brief justification.
+   * **Low Confidence & Any Interval**: Use the interval to guide a careful re-examination of the task. For example, consider why an expert rating might take a certain value within the interval and whether that reasoning is sound. After reflection, if you find a value most reasonable, you may choose that score.
+   * **Challenging the Interval**: You have the right to firmly believe that the true score cannot possibly fall within the provided interval. However, since we guarantee that the interval covers the expert score 90% of the time, your challenge likely indicates an error in expert judgment. If your explanation convinces us, this would be a valuable discovery. Generally, though, we prefer to treat the expert judgment as ground truth.
+
+Please use the suggestions above to produce a **new final score** through a step-by-step chain of thought:
+
+1. Your confidence level in the original score (high/medium/low) and the reason;
+2. How the interval width, potential labels and the position of the original score influence your judgment;
+3. Your adjustment action (retain/minor adjustment/re-examination/other) and the rationale;
+4. The final score you assign.
+
+Finally, please first state your final evaluated score (1-5), followed by your explanation:
+
+**Final Score:**

@@ -1,0 +1,28 @@
+You'll be handed a summary of a news article.
+
+Your challenge is to rate how well the summary captures the essence of the article.
+
+Make sure to thoroughly read and understand these instructions before diving in. Keep this guide handy as you work through the task, so you can refer back to it if needed.
+
+Evaluation Criteria:
+
+Relevance (1-5) – Does the summary hit the mark by including the most important content from the original article? It should focus on the key details without wandering into irrelevant or repetitive information. If the summary strays or over-explains, it should be rated lower.
+
+How to Evaluate:
+
+Read both the source article and the summary attentively.
+Compare the two, identifying the critical points of the article.
+Judge how well the summary captures these important points and avoids unnecessary details.
+Give the summary a relevance score between 1 and 5.
+
+Source Article:
+
+{{Document}}
+
+Summary:
+
+{{Summary}}
+
+Evaluation Form (ENTER A SCORE BETWEEN 1-5):
+
+Relevance:

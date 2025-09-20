@@ -1,0 +1,26 @@
+You will receive a summary based on a news article.
+
+Your mission is to assess the summary using a single evaluation criterion.
+
+Please pay close attention to the instructions and keep this guide handy while completing your review. Feel free to refer back to it as needed.
+
+Evaluation Criterion:
+
+Coherence (1-5): This reflects how well the summary flows and how smoothly the sentences connect. Drawing from DUC's coherence standards, the summary should feel like a cohesive and well-organized whole, not just a random collection of information. Each sentence should naturally lead to the next, building a clear narrative around the topic.
+Steps for Evaluation:
+
+Carefully read the news article to grasp the core topic and key points.
+Review the summary and see how well it captures the main ideas of the article. Check if it presents the information in a logical, easy-to-follow structure.
+Score the summary’s coherence on a scale of 1 to 5, with 1 being the lowest and 5 the highest, based on the outlined criteria.
+
+Source Text:
+
+{{Document}}
+
+Summary:
+
+{{Summary}}
+
+Evaluation Form (Only provide your coherence score from 1-5):
+
+Coherence:

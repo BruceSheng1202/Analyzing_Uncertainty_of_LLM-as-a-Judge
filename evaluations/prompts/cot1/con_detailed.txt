@@ -1,0 +1,26 @@
+You will receive a news article followed by a corresponding summary.
+
+Your task is to evaluate the summary using a specific metric.
+
+Please take the time to carefully review these instructions. Keep this document handy throughout the evaluation process, referring back to it as needed.
+
+Evaluation Criteria:
+
+Consistency (1-5) – This measures how well the summary reflects the facts presented in the source article. A consistent summary only includes information directly supported by the original content. Penalize summaries that contain any fabricated or misleading details.
+
+Steps for Evaluation:
+
+Read through the news article, focusing on the main points and essential details.
+Review the summary and cross-check it with the article, identifying any inconsistencies or factual errors.
+Rate the summary’s consistency using the evaluation scale provided.
+Example:
+
+Source Text:
+{{Document}}
+
+Summary:
+{{Summary}}
+
+Scorecard (scores ONLY):
+
+Consistency:

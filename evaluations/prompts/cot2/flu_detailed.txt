@@ -1,0 +1,24 @@
+You’ll be provided with a summary of a news article.
+
+Your mission is to evaluate this summary based on a single important factor.
+
+Take your time to carefully read these instructions, and feel free to refer back to them whenever needed throughout the review process.
+
+Evaluation Criteria:
+
+Fluency (1-5): This metric assesses how smoothly the summary reads, focusing on grammar, spelling, punctuation, word choice, and sentence structure.
+
+1: Poor. Numerous mistakes make the summary hard to follow and disrupt its natural flow.
+2: Below Average. Several errors are noticeable and disrupt the reading experience, making the text less coherent.
+3: Fair. A few issues affect clarity or flow, but the key information is still easy to grasp.
+4: Above Average. Only minor errors are present, allowing the text to flow well and remain easily readable.
+5: Excellent. The summary is clean, with little to no errors, and reads smoothly from start to finish.
+Example:
+
+Summary:
+
+{{Summary}}
+
+Evaluation Form (Please provide only your score between 1-5):
+
+Fluency (1-5):

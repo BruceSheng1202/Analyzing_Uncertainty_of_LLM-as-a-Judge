@@ -1,0 +1,23 @@
+You’ll be handed a summary of a news article.
+
+Your task is to rate this summary on one key aspect.
+
+Be sure to thoroughly read these instructions and keep them handy while you review—you may want to refer back to them at any time.
+
+Evaluation Criteria:
+
+Fluency (1-5): This is where you judge how effortlessly the summary flows, looking at grammar, spelling, punctuation, word choice, and sentence structure.
+
+1: Struggling. The summary is riddled with mistakes, making it difficult to understand and awkward to read.
+2: Clunky. A noticeable amount of errors disrupt the flow, causing it to feel disjointed.
+3: Passable. A few issues here and there, but the overall meaning still comes through, even if it's a bit rough around the edges.
+4: Smooth. Minor errors don't get in the way of readability, and the text flows fairly well.
+5: Flawless. The summary is polished, easy to read, and free of noticeable errors.
+
+Summary:
+
+{{Summary}}
+
+Evaluation Form (Give only your rating between 1-5):
+
+Fluency (1-5):

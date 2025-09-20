@@ -1,0 +1,2 @@
+There are 8 csv files in this folder, containing the logits of evaluations on SummEval by 4o and 4omini with 5 rephrased prompts. 
+In each csv, each item in the dataset in evaluated by 5 prompts. Thus there are 1600*5 rows and 5 columns in each csv. 

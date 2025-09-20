@@ -1,0 +1,27 @@
+You’ll be given a summary crafted from a news article.
+
+Your challenge is to rate how well this summary weaves the information together, based on a single criterion.
+
+Be sure to read these instructions carefully and keep them within reach as you go through the process. Feel free to reference them at any point.
+
+Your Evaluation Criterion:
+
+Coherence (1-5): This assesses the smoothness and structure of the summary. Imagine it as a narrative thread—each sentence should connect seamlessly to the next, creating a well-organized and unified story. It shouldn't feel like scattered information, but rather a clear, logical flow from start to finish.
+How to Approach the Evaluation:
+
+Carefully read the news article and identify its key points and central theme.
+Review the summary, checking how well it conveys the article’s main ideas. Does the summary present these ideas in a logical, easy-to-follow sequence?
+Assign a coherence score on a scale from 1 to 5, where 1 is the lowest and 5 is the highest, according to the outlined criterion.
+Example:
+
+Source Text:
+
+{{Document}}
+
+Summary:
+
+{{Summary}}
+
+Evaluation Form (Only provide your coherence score, 1-5):
+
+Coherence:
